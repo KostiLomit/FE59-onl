@@ -1,0 +1,41 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    list-style-type: none;
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    background-color: #F5F5F5;
+    margin: 15px auto;
+}
+
+.title {
+   text-align: center;
+   text-transform: uppercase;
+   padding-top: 82px;
+}
+
+.sep hr {
+    border: none;
+    max-width: 170px;
+    height: 1px ;
+    margin: 40px auto 40px;
+    background-color: #EC7979;
+}
+
+.subtitle {
+    color: #86878b;
+    text-align: center;
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    
+    
+    
+}
