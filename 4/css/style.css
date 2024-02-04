@@ -4,19 +4,29 @@
     box-sizing: border-box;
     font-size: 100%;
     list-style-type: none;
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
 
 .container {
     max-width: 1200px;
     background-color: #F5F5F5;
-    margin: 15px auto;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .title {
    text-align: center;
    text-transform: uppercase;
    padding-top: 82px;
+   font-size: 36px;
+}
+
+.title h2 {
+    font-family: Raleway;
+    font-weight: normal;
 }
 
 .sep hr {
@@ -30,12 +40,73 @@
 .subtitle {
     color: #86878b;
     text-align: center;
+    margin-bottom: 79px;
+    font-size: 18px;
+}
+
+.subtitle h5 {
+    font-family: Raleway;
+    font-weight: normal;
 }
 
 .items {
     display: flex;
     justify-content: center;
+    padding-bottom: 83px;
+    font-family: Raleway;
+}
+
+li {
+    text-transform: capitalize;
+    font-size: 18px;
+    border-bottom: 1px solid #ddd;
+    background-color: white;
+    color: #86878b;
+    padding: 15px;
     
-    
-    
+}
+
+.item-el {
+    text-align: center;
+    width: 370px;
+    margin-left: 15.5px;
+    margin-right: 15.5px;
+}
+
+.item-el:first-child {
+    margin-left: 0;
+}
+
+.item-el:last-child {
+    margin-right: 0;
+}
+
+.plan {
+    background-color: #333;
+    color: white;
+    text-transform: none;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.price {
+    background-color: #333;
+    color: white;
+    border: 1px solid white;
+    border-right: none;
+    border-left: none;
+    text-transform: none;
+    font-size: 36px;
+    font-family: Raleway;
+}
+
+.under-price {
+    background-color: #333;
+    color:#86878b;
+    text-transform: none;
+    font-size: 18px;
+}
+
+.item-el:nth-child(2) { 
+    margin-top: -20px;
 }
