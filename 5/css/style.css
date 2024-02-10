@@ -96,7 +96,7 @@ p.comment-text {
     content: "";
     position: absolute;
     bottom: -20px;
-    left: 20px;
+    left: 65px;
     width: 0;
 	height: 0;
 	border-left: 15px solid transparent;
