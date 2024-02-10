@@ -68,6 +68,7 @@ p {
 }
 .item {
     max-width: 370px;
+    width: 100%;
     margin-left: 15.5px;
     margin-right: 15.5px;
     text-align: center;
@@ -98,9 +99,9 @@ p.comment-text {
     left: 20px;
     width: 0;
 	height: 0;
-	border-left: 25px solid transparent;
-	border-right: 25px solid transparent;
-	border-top: 50px solid #E2E2E2;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-top: 20px solid #E2E2E2;
 }
 .person {
     max-width: 370px;
