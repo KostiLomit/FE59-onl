@@ -181,6 +181,7 @@ button.tabs-button {
     width: 370px;
     margin-left: 15.5px;
     margin-right: 15.5px;
+    transition: 0.3s;
 }
 
 .pricing-item-el:first-child {
@@ -218,10 +219,6 @@ button.tabs-button {
     color:#86878b;
     text-transform: none;
     font-size: 18px;
-}
-
-.pricing-item-el { 
-    transition: 0.3s;
 }
 
 .pricing-item-el:hover { 
