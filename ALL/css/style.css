@@ -220,7 +220,11 @@ button.tabs-button {
     font-size: 18px;
 }
 
-.pricing-item-el:nth-child(2) { 
+.pricing-item-el { 
+    transition: 0.3s;
+}
+
+.pricing-item-el:hover { 
     position: relative;
     bottom: 20px;
     box-shadow: 3px 5px 36px 0px rgba(0,0,0,0.75);
@@ -403,6 +407,7 @@ h1.main-title {
 
 .main-subtitle {
     max-width: 270px;
+    /*text-align: left;*/
 }
 
 p.main-subtitle {
