@@ -14,11 +14,11 @@
             </div>
             <div class="navigation">
                 <nav>
-                    <li class="navigation-list"><a href="#Features"></a>Features</li>
-                    <li class="navigation-list"><a href="#About"></a>About</li>
-                    <li class="navigation-list"><a href="#Pricing"></a>Pricing</li>
-                    <li class="navigation-list"><a href="#Reviews"></a>Reviews</li>
-                    <li class="navigation-list"><a href="#Contact"></a>Contact</li>
+                    <li class="navigation-list"><a class="navigation-list-el" href="#Features">Features</a></li>
+                    <li class="navigation-list"><a class="navigation-list-el" href="#About">About</a></li>
+                    <li class="navigation-list"><a class="navigation-list-el" href="#pricing">Pricing</a></li>
+                    <li class="navigation-list"><a class="navigation-list-el" href="#Reviews">Reviews</a></li>
+                    <li class="navigation-list"><a class="navigation-list-el" href="#Contact">Contact</a></li>
                 </nav>
             </div>
         </div>
@@ -32,12 +32,15 @@
                 <a href="#" title="Download" id="bg-download">Download</a>
             </div>
             <div class="main-form">
-                <form action="#" method="post">
-                    <input type="text" name="name" placeholder="Name">
-                    <input type="emai" name="email" placeholder="Email">
-                    <input type="password" name="password" placeholder="Password">
-                    <button type="submit">Get Started</button>
-                </form>
+                <p class="form-title">Try Your <span class="colortext">&nbspFREE&nbsp</span> Trial Today</p>
+                <div class="content-form">
+                    <form class="top-form" action="#" method="post">
+                        <input type="text" name="name" placeholder="Name">
+                        <input type="email" name="email" placeholder="Email">
+                        <input type="password" name="password" placeholder="Password">
+                    </form>
+                </div>
+                <button class="top-form-button" type="submit">Get Started</button>
             </div>
         </div>
     </section>
@@ -119,7 +122,7 @@
     </section>
     <section class="pricing-options">
         <div class="container">
-            <div class="section-title">
+            <div class="section-title" id="pricing">
                 <h2>pricing options</h2>
             </div>
             <div class="section-subtitle">
@@ -168,7 +171,7 @@
             </div>
         </div>
     </section>
-    <section class="customers">
+    <section class="customers" id="Reviews">
         <div class="container">
             <div class="section-title">
                 <h2>what our customers are saying</h2>
@@ -247,9 +250,10 @@
            </div>
         </div>
     </section>
-    <section class="contact-us">
+    <section class="contact-us" id="#Contact">
         <div class="container">
-
+            <div class="content"></div>
+            <form action=""></form>
         </div>
     </section>
     <section class="footer">
