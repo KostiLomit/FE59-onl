@@ -382,7 +382,6 @@ a.navigation-list-el:hover {
 }
 
 img.main-logo{
-    font-weight: 170px;
     height: 55px;
 
 }
@@ -659,58 +658,45 @@ p.social-subtitle {
     color: #EC7979;
 }
 
-.contact-form {
+.form-container {
     display: flex;
-    padding-top: 89px;
+    gap: 30px;
 }
 
-.form-field-group {
+.form-field-form-el {
+    width: calc(50% - 15px);
     display: flex;
     flex-direction: column;
-    height: 192px;
-    justify-content: space-between;
+    gap: 50px;
+    font-size: 18px;
 }
 
-.form-field-group input {
-    color: #BDBDBD;
-    font-family: Open-Sans;
-    font-size: 14px;
+.form-field-form-el input {
     border: none;
-    border-bottom: 1px solid #BDBDBD;
-    outline: none;
-    width: 571px;
+    border-bottom: 1px silver solid;
     padding-bottom: 16px;
 }
 
-.form-field-message {
-    position: relative;
-    margin-left: 30px
-}
-
-.form-field-message textarea {
-    width: 569px;
+.form-field-form-el textarea {
+    width: 100%;
+    height: 100%;
     border: none;
-    border-bottom: 1px solid #BDBDBD;
-    color: #BDBDBD;
-    outline: none;
+    border-bottom: 1px silver solid;
     resize: none;
-    height: 192px;
-    margin-bottom: 50px;
 }
 
 .down-form-button {
-    width: 370px;
-    height: 58px;
-    background-color: #EC7979;
-    color: white;
-    font-size: 18px;
-    cursor: pointer;
-    outline: none;
-    border: none;
-    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 66px;
-    
+    margin: 50px auto;
+    width: 370px;
+    height: 58px;
+    cursor: pointer;
+    background-color: #EC7979;
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+
 }
