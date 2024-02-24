@@ -32,7 +32,7 @@
     src: url(../assets/fonts/Raleway/static/Raleway-Bold.ttf);
     font-weight: 700;
 }
-* { 
+* {
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
@@ -40,20 +40,24 @@
     font-size: 100%;
     list-style-type: none;
     font-family: 'Open-Sans', sans-serif;
+
 }
+
+
 
 .container {
     max-width: 1200px;
     margin: 30px auto;
     padding: 0 15px;
 }
+
 .tabs-list {
     display: flex;
 }
 .active-tab {
     border: 1px solid #c6cbcd;
     border-bottom: none;
-    border-radius: 5px 5px 0px 0px;
+    border-radius: 5px 5px 0 0;
     position: relative;
     top: 1px;
     background: white;
@@ -80,12 +84,12 @@
 
 h3 {
     padding: 55px 29px 57px 101px;
-    font-family: Open-Sans;
+    font-family: Open-Sans, serif;
     font-weight: 700;
     font-size: 30px;
 }
 .tab-text p {
-    font-family: Raleway;
+    font-family: Raleway, serif;
     padding: 0 30px 0 100px;
     font-size: 18px;
     text-align: left;
@@ -96,7 +100,7 @@ h3 {
     justify-content: flex-end;
 }
 .tab-image img {
-    height: auto; 
+    height: auto;
 }
 
 button.tabs-button {
@@ -115,7 +119,7 @@ button.tabs-button {
     margin: 0 auto 0;
     width: 100%;
     text-align: center;
-    font-family: Raleway;
+    font-family: Raleway, serif;
     font-size: 36px;
     font-weight: 400;
     text-transform: uppercase;
@@ -133,11 +137,12 @@ button.tabs-button {
 .section-subtitle p {
     text-align: center;
     margin-bottom: 83px;
-    font-family: Raleway;
+    font-family: Raleway, serif;
     font-size: 18px
 }
 .awesome-items {
     display: flex;
+    gap: 30px;
 
 }
 .item {
@@ -146,14 +151,14 @@ button.tabs-button {
 }
 .item p {
     padding-top: 24px;
-    font-family: Open-Sans;
+    font-family: Open-Sans, serif;
     font-size: 24px;
     font-weight: 700;
 }
 
 .item p:nth-of-type(2) {
     padding-top: 30px;
-    font-family: Raleway;
+    font-family: Raleway, serif;
     font-size: 18px;
     font-weight: 400;
 }
@@ -165,7 +170,8 @@ button.tabs-button {
     display: flex;
     justify-content: center;
     padding-bottom: 83px;
-    font-family: Raleway;
+    font-family: Raleway, serif;
+    gap: 30px;
 }
 
  .space {
@@ -180,17 +186,7 @@ button.tabs-button {
 .pricing-item-el {
     text-align: center;
     width: 370px;
-    margin-left: 15.5px;
-    margin-right: 15.5px;
     transition: 0.3s;
-}
-
-.pricing-item-el:first-child {
-    margin-left: 0;
-}
-
-.pricing-item-el:last-child {
-    margin-right: 0;
 }
 
  .plan {
@@ -210,7 +206,7 @@ button.tabs-button {
     border-left: none;
     text-transform: none;
     font-size: 36px;
-    font-family: Raleway;
+    font-family: Raleway, serif;
     font-weight: 700;
     padding: 15px;
 }
@@ -222,10 +218,10 @@ button.tabs-button {
     font-size: 18px;
 }
 
-.pricing-item-el:hover { 
+.pricing-item-el:hover {
     position: relative;
     bottom: 20px;
-    box-shadow: 3px 5px 36px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 5px 36px 0 rgba(0,0,0,0.75);
 }
 
 .pricing-options h2 {
@@ -238,23 +234,15 @@ button.tabs-button {
     display: flex;
     justify-content: center;
     padding-bottom: 83px;
-    /*flex-wrap: wrap;*/
+    gap: 30px;
 }
 
 .customers-item {
     max-width: 370px;
     width: 100%;
-    margin-left: 15.5px;
-    margin-right: 15.5px;
     text-align: center;
 }
 
-.customers-item:first-child {
-    margin-left: 0px;
-}
-.customers-item:last-child {
-    margin-right: 0px;
-}
 .coment {
     padding: 38px 25px;
     background-color:#E2E2E2;
@@ -263,7 +251,7 @@ button.tabs-button {
 }
 p.comment-text {
     color: #86878B;
-    font-family: Raleway;
+    font-family: Raleway, serif;
     font-size: 18px;
     font-weight: 400;
 }
@@ -286,7 +274,7 @@ p.comment-text {
 }
 /*.photo {
     justify-content: left;
-    
+
 }*/
 img.comment-photo {
     width: 70px;
@@ -297,7 +285,7 @@ img.comment-photo {
     margin-left: 30px;
     flex-direction: column;
     /*align-items: flex-start;*/
-}  
+}
 p.name {
 font-family: "Open-Sans";
 font-size: 24px;
@@ -326,7 +314,7 @@ text-align: left;
 }
 .logo {
     justify-content: flex-start;
-    padding: 22px 0 22px 0px;
+    padding: 22px 0 22px 0;
 }
 .navigation {
     display: flex;
@@ -336,12 +324,56 @@ text-align: left;
 nav{
     display: flex;
 }
+.burger {
+    display: none;
+    position: relative;
+    top: 25px;
+    z-index: 50;
+    align-items: center;
+    justify-content: flex-end;
+    width: 30px;
+    height: 18px;
+}
+
+.burger span{
+    height: 2px;
+    width: 80%;
+    transform: scale(1);
+    background-color: #FAF6F2;
+}
+
+.burger::before, .burger::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #FAF6F2;
+    transition: all 0.3s ease 0s;
+}
+
+.burger::before { top: 0 }
+
+.burger::after { bottom: 0 }
+
+
+/* Добавляем класс active для анимации иконки бургера */
+.burger.active span { transform: scale(0) }
+
+.burger.active::before{
+    top: 50%;
+    transform: rotate(-45deg) translate(0, -50%);
+}
+
+.burger.active::after{
+    bottom: 50%;
+    transform: rotate(45deg) translate(0, 50%);
+}
 
 .main {
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../assets/img/main/image.png) no-repeat;
     background-size: cover;
-    height: 1026px;
-    
+    height: 100%;
+
 }
 .bg-container {
     padding-top: 306px;
@@ -356,7 +388,7 @@ nav{
     font-weight: 600;
     font-family: Open-Sans;
     font-size: 14px;
-   padding: 28px 0 28px 0px;
+   padding: 28px 0 28px 0;
 }
 
 a.navigation-list-el {
@@ -424,6 +456,7 @@ p.main-subtitle {
 #bg-download {
     display: flex;
     margin-left: 0;
+    margin-bottom: 180px;
     border: 1px solid white;
     width: 270px;
     height: 60px;
@@ -437,7 +470,7 @@ p.main-subtitle {
     text-decoration: none;
     /*transition: color border-color 0.5s;*/
     transition: all 0.5s;
-} 
+}
 
 #bg-download:hover {
     color: #EC7979;
@@ -452,6 +485,7 @@ p.main-subtitle {
 .social-content {
     display: flex;
     padding-top: 32px;
+    justify-content: space-between;
 }
 
 .social-icons-list {
@@ -459,18 +493,25 @@ p.main-subtitle {
     gap: 30px;
 }
 
-.social-icos-el {
+.social-icon-el {
     transition: all 0.5s;
 }
 
-.social-icos-el:hover {
-    cursor: pointer;
-    background-color: #EC7979;
+.social-icon{
+    color: #CCCCCC;
+}
+
+svg:hover {
+    fill: #EC7979;
+}
+
+svg:active {
+    fill: #ea3838
 }
 
 p.social-title {
     color: #333;
-    font-family: Open-Sans;
+    font-family: Open-Sans, serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -481,17 +522,21 @@ p.social-title {
 
 p.social-subtitle {
     color: #86878B;
-    font-family: Raleway;
+    font-family: Raleway, serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    max-height: 42px;
+    overflow: hidden;
+
+
 }
 
 .stylish {
     position: relative;
     height: 425px;
-    background: url(/FE59-onl/ALL/assets/img/axur/1bg.png)
+    background: url(/ALL/assets/img/axur/1bg.png);
 }
 
 .stylish::before {
@@ -553,7 +598,7 @@ p.social-subtitle {
     justify-content: center;
     align-items: center;
     color: white;
-    font-family: Open-Sans;
+    font-family: Open-Sans, serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
@@ -561,7 +606,7 @@ p.social-subtitle {
     /*transition: color border-color 0.5s;*/
     transition: all 0.5s;
     margin-top: 80px;
-} 
+}
 
 #stylish-download:hover {
     color: #EC7979;
@@ -571,7 +616,7 @@ p.social-subtitle {
 .footer {
     background-color: black;
     max-width: 100%;
-    height: 164px
+    height: 100%;
 }
 
 .footer-content {
@@ -579,12 +624,16 @@ p.social-subtitle {
     align-items: center;
     flex-direction: column;
     padding-top: 35px;
-    
+
 }
 
 .footer-icons-list {
     display: flex;
-    gap: 32.5px;
+    gap: 32.5px
+}
+
+.footer-svg {
+    color: #CCCCCC;
 }
 
 .footer-text {
@@ -592,6 +641,7 @@ p.social-subtitle {
     display: inline-block;
     color: white;
     text-align: center;
+    padding-bottom: 27px;
 }
 
 .footer-icos-el {
@@ -600,7 +650,6 @@ p.social-subtitle {
 
 .footer-icos-el:hover {
     cursor: pointer;
-    background-color: #EC7979;
 }
 
 .form-title {
@@ -632,7 +681,7 @@ p.social-subtitle {
     border: none;
     border-bottom: 1px solid #BDBDBD;
     color: #BDBDBD;
-    font-family: Open-Sans;
+    font-family: Open-Sans, serif;
     font-size: 14px;
     outline: none;
 }
@@ -643,14 +692,14 @@ p.social-subtitle {
     width: 100%;
     height: 60px;
     justify-content: center;
-    font-family: Open-Sans;
+    font-family: Open-Sans, serif;
     font-size: 15px;
     color: white;
     background-color: #EC7979;
     align-items: center;
     outline: none;
     border: none;
-    border-radius: 0px 0px 10px 10px / 25px 25px 10px 10px;
+    border-radius: 0 0 10px 10px / 25px 25px 10px 10px;
     cursor: pointer;
 }
 
@@ -699,4 +748,350 @@ p.social-subtitle {
     font-size: 18px;
     font-weight: 600;
 
+}
+
+@media (min-width: 876px) and (max-width: 1250px) {
+    .main-content {
+        padding-left: 100px;
+        max-width: 453px;
+    }
+    h1.main-title {
+        font-size: 36px;
+        line-height: 42px;
+        padding: 37px 0 41px 0;
+        max-width: 453px;
+    }
+    img.main-logo {
+        width: 115px;
+    }
+    .main-title::after {
+        width: 115px;
+        margin: 41px 0 0;
+    }
+    p.main-subtitle {
+        max-width: 183px;
+        font-size: 14px;
+    }
+    #bg-download {
+        width: 183.099px;
+        height: 50px;
+        margin-bottom: 131px;
+    }
+    .main-form {
+        width: 398px;
+        margin-right: 20px;
+    }
+    .form-title {
+        font-size: 18px;
+    }
+    .top-form input {
+        max-width: 100%;
+    }
+    .top-form input {
+        max-width: 298px;
+    }
+    .container {
+        width: 100%;
+    }
+    p.social-title {
+        font-size: 18px;
+
+    }
+    p.social-subtitle {
+        font-size: 14px;
+        max-height: 32px;
+    }
+    svg.social-icon {
+        width: 64px;
+        height: 64px;
+    }
+    .tab-text {
+        padding: 20px 26px 0 85px;
+        max-width: 65%;
+    }
+    h3 {
+        padding: 0;
+        padding-bottom: 58px;
+        font-size: 24px
+    }
+    .tab-text p {
+        padding: 0;
+        font-size: 14px;
+    }
+    button.tabs-button {
+        margin: 0;
+        font-size: 18px;
+        font-family: "Open-Sans", serif;
+        margin-top: 38px;
+        margin-bottom: 40px;
+        width: 231px;
+        height: 58px;
+    }
+    .tab-image img {
+        height: 100%;
+        width: 100%;
+    }
+    .tab-content {
+        height: 100%;
+    }
+    .section-title h2 {
+        font-size: 24px;
+    }
+    .section-title::after {
+        width: 142px;
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+    .section-subtitle p {
+        font-size: 14px;
+        margin-bottom: 32px;
+    }
+    .item p {
+        font-size: 18px;
+    }
+    .item p:nth-of-type(2) {
+        font-size: 14px;
+    }
+    .awesome-items {
+        gap: 20px;
+    }
+    .customers-item-list {
+        gap: 20px;
+    }
+    p.comment-text {
+        font-size: 14px;
+        padding: 50px 30px 50px 30px;
+        width: 100%;
+    }
+    img.comment-photo {
+        width: 63px;
+        height: 63px;
+    }
+    p.name {
+        font-size: 18px;
+    }
+    p.position {
+        font-size: 14px;
+    }
+    .coment {
+        padding: 0;
+    }
+    .stylish-title {
+        font-size: 24px;
+    }
+    .stylish-title::after {
+        width: 142px;
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+    .stylish-subtitle {
+        font-size: 14px;
+    }
+    .stylish {
+        height: 100%;
+        background-size: 100%;
+        margin-bottom: 70px;
+    }
+    .main {
+        background-size: cover;
+    }
+    #stylish-download {
+        width: 318px;
+        height: 58px;
+        margin-bottom: 50px;
+        margin-top: 32px;
+    }
+    .down-form-button {
+        width: 318px;
+        height: 58px;
+    }
+    .form-field-form-el {
+        font-size: 14px;
+    }
+    svg.footer-svg {
+        width: 45px;
+        height: 45px;
+    }
+    .footer-text {
+        color: #FFFFFF80;
+        font-size: 14px;
+        padding-bottom: 30px;
+    }
+    .logo {
+        padding-left: 100px;
+    }
+}
+
+@media (max-width: 875px){
+
+    .burger {
+        display: flex
+    }
+
+    .nav {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 0; bottom: 0; left: 0; right: 0;
+        z-index: 50;
+        overflow-y: auto;
+        padding: 50px 40px;
+        background-color: black;
+        animation: burgerAnimation 0.4s;
+    }
+
+    .nav li{
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    .main {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .main-content { padding: 0; }
+    .bg-container {
+        flex-direction: column;
+        padding: 0;
+    }
+    h1.main-title {
+        font-size: 36px;
+        font-weight: 500;
+        text-align: center;
+        padding: 84px 16px 0 16px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .main-title::after {
+        width: 134px;
+        margin: 43px auto 42px;
+    }
+    p.main-subtitle {
+        width: 100%;
+        font-size: 14px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    #bg-download {
+        width: calc(100% - 32px);
+        margin: 42px 16px 42px 16px;
+    }
+    img.main-logo {
+        display: none;
+    }
+    .main-form {
+        width: calc(100% - 32px);
+        margin: 0 16px 0 16px;
+        height: 100%;
+        margin-bottom: 51px;
+    }
+    .form-title {
+        justify-content: center;
+        font-size: 14px;
+        width: calc(100% - 40px);
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .top-form {
+        width: 100%;
+    }
+    .top-form input {
+        width: calc(100% - 40px);
+    }
+    .content-form {
+        width: 100%;
+    }
+    .top-form-button {
+        margin-top: 51px;
+    }
+    .tab-image img {
+        display: none;
+    }
+    .social-content {
+        flex-direction: column;
+        width: 100%;
+    }
+    p.social-title {
+        text-align: center;
+        padding: 0;
+        font-size: 18px;
+    }
+    p.social-subtitle {
+        font-size: 14px;
+        padding: 0;
+        text-align: center;
+        margin-bottom: 32px;
+        overflow: unset;
+        width: 100%;
+    }
+    .social-icon {
+        width: 26px;
+        height: 26px;
+        gap: 17px;
+    }
+    .social-icons{
+        width: 100%
+
+    }
+    .social {
+        height: 100%;
+    }
+    .container {
+        width: 100%;
+        padding: 0;
+    }
+    .social-icons-list {
+        gap: 17px;
+        width: 100%;
+        justify-content: center;
+    }
+    .tab-content {
+        width: calc(100%-32px);
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .tabs-list {
+        gap: -6px;
+        margin-left: 16px;
+        font-size: 14px;
+
+    }
+    .active-tab {
+        padding-top: 10px;
+    }
+    .tabs li {
+        padding: 0;
+        padding-top: 10px;
+        padding-left: 31px;
+        padding-right: 31px;
+        padding-bottom: 10px;
+
+    }
+    h3 {
+        padding: 0;
+        font-size: 18px;
+        text-align: center;
+        margin: 20px 20px;
+
+    }
+    .tab-text {
+        width: 100%;
+    }
+    .tab-text p {
+        padding: 0;
+        font-size: 13px;
+        text-align: center;
+        margin: 20px 20px;
+    }
+    button.tabs-button {
+        width: calc(100% - 45px);
+        height: 50px;
+        margin: 0 20px 30px 25px;
+    }
+}
+
+@keyframes burgerAnimation {
+    from {opacity: 0}
+    to {opacity: 1}
 }
