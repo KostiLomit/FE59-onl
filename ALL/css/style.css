@@ -281,6 +281,9 @@ img.comment-photo {
     height: 70px;
     border-radius: 100px;
 }
+.slider-menu {
+    display: none;
+}
 .info {
     margin-left: 30px;
     flex-direction: column;
@@ -858,6 +861,9 @@ p.social-subtitle {
     .customers-item-list {
         gap: 20px;
     }
+    .slider-menu {
+        display: none;
+    }
     p.comment-text {
         font-size: 14px;
         padding: 50px 30px 50px 30px;
@@ -1047,7 +1053,7 @@ p.social-subtitle {
         justify-content: center;
     }
     .tab-content {
-        width: calc(100%-32px);
+        width: calc(100% - 32px);
         margin-left: 16px;
         margin-right: 16px;
     }
@@ -1089,7 +1095,166 @@ p.social-subtitle {
         height: 50px;
         margin: 0 20px 30px 25px;
     }
+    .awesome-items {
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .section-title h2 {
+        font-size: 18px;
+        width: calc(100% - 32px);
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .section-title::after {
+        width: 134px;
+    }
+    .section-subtitle p {
+        font-size: 14px;
+    }
+    .item p {
+        font-size: 18px;
+    }
+    .item p:nth-of-type(2) {
+        font-size: 14px;
+    }
+    .pricing-items {
+        flex-direction: column;
+        padding-bottom: 26px;
+    }
+    .pricing-item-el{
+        width: calc(100% - 32px);
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .plan {
+        font-size: 18px;
+    }
+    .price {
+        font-size: 24px;
+    }
+    .under-price {
+        font-size: 14px;
+        padding-top: 11px;
+        padding-bottom: 11px;
+    }
+    .space {
+        font-size: 14px;
+    }
+    /*.customer-slider {*/
+    /*    display: flex;*/
+    /*    overflow-x: auto;*/
+    /*    scroll-snap-type: x mandatory; !* Esto asegura que los elementos se ajusten al desplazarse *!*/
+    /*}*/
+
+    /*.customers-item {*/
+    /*    flex: 0 0 auto; !* Los elementos no crecen ni se encogen, pero sí pueden ser 'auto' en su base *!*/
+    /*    scroll-snap-align: start; !* Alinea los elementos al inicio del contenedor al desplazar *!*/
+    /*    width: 100%; !* Asumiendo que quieres que cada elemento ocupe el ancho completo del dispositivo *!*/
+    /*    margin-right: 10px; !* Ajusta el margen como desees *!*/
+    /*    !* Tus estilos adicionales aquí *!*/
+    /*}*/
+    /*.slide-left, .slide-right {*/
+    /*    position: absolute;*/
+    /*    top: 50%;*/
+    /*    transform: translateY(-50%);*/
+    /*}*/
+
+    /*.slide-left {*/
+    /*    left: 0;*/
+    /*}*/
+
+    /*.slide-right {*/
+    /*    right: 0;*/
+    /*}*/
+    #slide2 {
+        display: none;
+    }
+    #slide3 {
+         display: none;
+     }
+    #slide1 {
+        width: calc(100% - 32px);
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    p.comment-text {
+        font-size: 14px;
+    }
+    p.name {
+        font-size: 14px;
+    }
+    p.position {
+        font-size: 13px;
+    }
+    img.comment-photo {
+        width: 57px;
+        height: 57px;
+    }
+    .stylish {
+        height: 100%;
+    }
+    .stylish-title {
+        font-size: 24px;
+    }
+    .stylish-subtitle {
+        font-size: 14px;
+        width: calc(100% - 32px);
+        margin-right: 16px;
+        margin-left: 16px;
+    }
+    .stylish-title::after {
+        width: 134px;
+    }
+    #stylish-download {
+        width: calc(100% - 32px);
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-bottom: 58px;
+    }
+    .form-container {
+        flex-direction: column;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .form-field-form-el {
+        width: inherit;
+    }
+    .down-form-button {
+        width: calc(100% - 32px);
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .form-field-form-el textarea {
+        padding-bottom: 85px;
+    }
+    .item {
+        width: calc(100% - 32px);
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .footer-content {
+        width: calc(100% - 32px);
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .footer-icons-list {
+        gap: 17px;
+    }
+    .footer-svg {
+        width: 26px;
+        height: 26px;
+        gap: 17px;
+    }
+    .footer-text {
+        font-size: 14px;
+        opacity: 50%;
+    }
+
+
 }
+
 
 @keyframes burgerAnimation {
     from {opacity: 0}
