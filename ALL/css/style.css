@@ -539,7 +539,7 @@ p.social-subtitle {
 .stylish {
     position: relative;
     height: 425px;
-    background: url(/ALL/assets/img/axur/1bg.png);
+    background: url(../assets/img/axur/1bg.png);
 }
 
 .stylish::before {
